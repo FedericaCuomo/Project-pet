@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Impostazioni — PetAdopt Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+<div class="app">
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn mobile-toggle" onclick="document.getElementById('sb').classList.toggle('open')">☰</button>
+      <h1>Impostazioni</h1>
+    </header>
+    <main class="content">
+      <div class="panel">
+        <div class="panel-head"><h2>Impostazioni generali</h2></div>
+        <div class="panel-body">
+          <form class="form">
+            <div class="form-row"><label>Nome del sito</label><input type="text" value="PetAdopt" /></div>
+            <div class="form-row"><label>Email di contatto</label><input type="email" value="info@petadopt.it" /></div>
+            <div class="form-row"><label>Lingua predefinita</label><select><option>Italiano</option><option>English</option></select></div>
+
+            <div class="form-row"><label>Moderazione annunci</label>
+              <select><option>Automatica</option><option>Manuale (admin approva)</option></select>
+            </div>
+
+            <div class="form-row">
+              <label style="display:flex;align-items:center;gap:.5rem;font-weight:500">
+                <input type="checkbox" checked /> Notifiche email per nuovi annunci
+              </label>
+            </div>
+            <div class="form-row">
+              <label style="display:flex;align-items:center;gap:.5rem;font-weight:500">
+                <input type="checkbox" checked /> Consenti registrazione pubblica
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn btn-outline">Annulla</button>
+              <button type="submit" class="btn btn-primary">Salva modifiche</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <aside class="sidebar" id="sb">
+    <div class="sidebar-head"><a href="index.html" class="brand"><span class="brand-logo">🐾</span> PetAdopt</a></div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-label">Principale</div>
+        <a href="index.html" class="nav-item"><span class="ico">📊</span>Dashboard</a>
+        <a href="annunci.html" class="nav-item"><span class="ico">📋</span>Annunci</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Gestione</div>
+        <a href="utenti.html" class="nav-item"><span class="ico">👥</span>Utenti</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Sistema</div>
+        <a href="impostazioni.html" class="nav-item active"><span class="ico">⚙️</span>Impostazioni</a>
+      </div>
+    </nav>
+    <div class="sidebar-foot"><div class="avatar">AD</div><div class="user-info"><strong>Admin</strong><span>admin@petadopt.it</span></div></div>
+  </aside>
+</div>
+</body>
+</html>

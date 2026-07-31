@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ritrovamenti — PetAdopt</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="../index.html" class="brand"><span class="brand-logo">🐾</span> PetAdopt</a>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="adozioni.html">Adozioni</a>
+      <a href="smarrimenti.html">Smarrimenti</a>
+      <a href="ritrovamenti.html" style="color:var(--green-700)">Ritrovamenti</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="nav-cta"><a href="pubblica.html" class="btn btn-primary btn-sm">Segnala ritrovamento</a></div>
+  </div>
+</header>
+
+<section class="section" style="padding-top:2.5rem">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" style="color:var(--blue-700)">Ritrovamenti</span>
+        <h1 style="margin:0">Animali ritrovati</h1>
+        <p>Hai perso il tuo amico? Sfoglia gli annunci di animali ritrovati nella tua zona.</p>
+      </div>
+    </div>
+
+    <div class="filters">
+      <input type="text" placeholder="🔍 Descrizione, zona..." />
+      <select><option>Specie</option><option>Cane</option><option>Gatto</option></select>
+      <select><option>Regione</option></select>
+      <button class="btn btn-primary btn-sm">Cerca</button>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600')"><span class="card-badge found">Ritrovato</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Gatto tigrato</h3>
+          <div class="card-meta"><span>📍 Firenze, Centro</span><span>📅 21/05</span></div>
+          <p style="margin-top:.5rem;font-size:.9rem">Trovato in via dei Servi, abituato alle persone.</p>
+          <div class="card-foot"><span class="tag blue">In custodia</span><a href="dettaglio-smarrimento.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600')"><span class="card-badge found">Ritrovato</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Cucciolo meticcio</h3>
+          <div class="card-meta"><span>📍 Bologna</span><span>📅 19/05</span></div>
+          <p style="margin-top:.5rem;font-size:.9rem">Pelo bianco e nero, in buone condizioni di salute.</p>
+          <div class="card-foot"><span class="tag blue">Veterinario</span><a href="dettaglio-smarrimento.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

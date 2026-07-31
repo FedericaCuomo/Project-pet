@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pubblica annuncio — PetAdopt</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="../index.html" class="brand"><span class="brand-logo">🐾</span> PetAdopt</a>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="adozioni.html">Adozioni</a>
+      <a href="smarrimenti.html">Smarrimenti</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width:720px">
+    <span class="eyebrow">Nuovo annuncio</span>
+    <h1>Pubblica il tuo annuncio</h1>
+    <p>Compila i campi qui sotto. Tutti gli annunci sono gratuiti.</p>
+
+    <form class="form" style="max-width:none">
+      <div class="form-row">
+        <label>Tipo di annuncio</label>
+        <select>
+          <option>Adozione</option>
+          <option>Smarrimento</option>
+          <option>Ritrovamento</option>
+        </select>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-row"><label>Nome dell'animale</label><input type="text" placeholder="Es. Luna" /></div>
+        <div class="form-row"><label>Specie</label><select><option>Cane</option><option>Gatto</option><option>Altro</option></select></div>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-row"><label>Razza</label><input type="text" placeholder="Es. Meticcio" /></div>
+        <div class="form-row"><label>Età</label><input type="text" placeholder="Es. 2 anni" /></div>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-row"><label>Città</label><input type="text" placeholder="Es. Milano" /></div>
+        <div class="form-row"><label>Data</label><input type="date" /></div>
+      </div>
+
+      <div class="form-row">
+        <label>Descrizione</label>
+        <textarea placeholder="Racconta la storia dell'animale, carattere, esigenze..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <label>Foto</label>
+        <input type="file" multiple />
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-row"><label>Email di contatto</label><input type="email" /></div>
+        <div class="form-row"><label>Telefono</label><input type="tel" /></div>
+      </div>
+
+      <div style="display:flex;gap:.6rem;justify-content:flex-end">
+        <button type="button" class="btn btn-secondary">Annulla</button>
+        <button type="submit" class="btn btn-primary">Pubblica annuncio</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

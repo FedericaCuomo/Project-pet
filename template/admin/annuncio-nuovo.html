@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nuovo annuncio — PetAdopt Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+<div class="app">
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn mobile-toggle" onclick="document.getElementById('sb').classList.toggle('open')">☰</button>
+      <h1>Nuovo annuncio</h1>
+      <div class="topbar-actions" style="margin-left:auto">
+        <button class="btn btn-outline btn-sm">Annulla</button>
+        <button class="btn btn-primary btn-sm">Salva e pubblica</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="row-2">
+        <div class="panel">
+          <div class="panel-head"><h2>Dettagli annuncio</h2></div>
+          <div class="panel-body">
+            <form class="form" style="max-width:none">
+              <div class="form-row">
+                <label>Tipo annuncio *</label>
+                <select><option>Adozione</option><option>Smarrimento</option><option>Ritrovamento</option></select>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-row"><label>Nome animale</label><input type="text" placeholder="Es. Luna" /></div>
+                <div class="form-row"><label>Specie *</label><select><option>Cane</option><option>Gatto</option><option>Altro</option></select></div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-row"><label>Razza</label><input type="text" /></div>
+                <div class="form-row"><label>Età</label><input type="text" placeholder="Es. 2 anni" /></div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-row"><label>Sesso</label><select><option>Maschio</option><option>Femmina</option></select></div>
+                <div class="form-row"><label>Taglia</label><select><option>Piccola</option><option>Media</option><option>Grande</option></select></div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-row"><label>Città *</label><input type="text" /></div>
+                <div class="form-row"><label>Data evento</label><input type="date" /></div>
+              </div>
+
+              <div class="form-row">
+                <label>Descrizione *</label>
+                <textarea placeholder="Racconta la storia dell'animale..."></textarea>
+                <span class="form-hint">Massimo 500 caratteri</span>
+              </div>
+
+              <div class="form-row">
+                <label>Foto</label>
+                <div class="upload">
+                  <div style="font-size:1.6rem;margin-bottom:.4rem">📷</div>
+                  Trascina le foto qui o <strong>clicca per selezionarle</strong>
+                  <div class="form-hint" style="margin-top:.3rem">JPG, PNG fino a 5MB</div>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn btn-outline">Salva bozza</button>
+                <button type="submit" class="btn btn-primary">Pubblica</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:1.25rem">
+          <div class="panel">
+            <div class="panel-head"><h2>Stato</h2></div>
+            <div class="panel-body">
+              <div class="form-row"><label>Visibilità</label><select><option>Pubblico</option><option>Bozza</option><option>Archiviato</option></select></div>
+              <div class="form-row" style="margin-top:.8rem"><label>Tag</label><input type="text" placeholder="vaccinato, sterilizzato..." /></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><h2>Contatti</h2></div>
+            <div class="panel-body">
+              <div class="form-row"><label>Email</label><input type="email" /></div>
+              <div class="form-row" style="margin-top:.8rem"><label>Telefono</label><input type="tel" /></div>
+              <div class="form-row" style="margin-top:.8rem">
+                <label style="display:flex;align-items:center;gap:.4rem;font-weight:500">
+                  <input type="checkbox" checked /> Mostra contatti nell'annuncio
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <aside class="sidebar" id="sb">
+    <div class="sidebar-head"><a href="index.html" class="brand"><span class="brand-logo">🐾</span> PetAdopt</a></div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-label">Principale</div>
+        <a href="index.html" class="nav-item"><span class="ico">📊</span>Dashboard</a>
+        <a href="annunci.html" class="nav-item"><span class="ico">📋</span>Annunci</a>
+        <a href="annuncio-nuovo.html" class="nav-item active"><span class="ico">➕</span>Nuovo annuncio</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Gestione</div>
+        <a href="adozioni-admin.html" class="nav-item"><span class="ico">🐾</span>Adozioni</a>
+        <a href="utenti.html" class="nav-item"><span class="ico">👥</span>Utenti</a>
+        <a href="#" class="nav-item"><span class="ico">✉️</span>Messaggi</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Sistema</div>
+        <a href="impostazioni.html" class="nav-item"><span class="ico">⚙️</span>Impostazioni</a>
+      </div>
+    </nav>
+    <div class="sidebar-foot"><div class="avatar">AD</div><div class="user-info"><strong>Admin</strong><span>admin@petadopt.it</span></div></div>
+  </aside>
+</div>
+</body>
+</html>

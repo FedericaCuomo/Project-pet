@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Adozioni — PetAdopt</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="../index.html" class="brand"><span class="brand-logo">🐾</span> PetAdopt</a>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="adozioni.html" style="color:var(--green-700)">Adozioni</a>
+      <a href="smarrimenti.html">Smarrimenti</a>
+      <a href="ritrovamenti.html">Ritrovamenti</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="pubblica.html" class="btn btn-primary btn-sm">Pubblica</a>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="padding-top:2.5rem">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Adozioni</span>
+        <h1 style="margin:0">Trova il tuo nuovo amico</h1>
+        <p>248 animali disponibili per l'adozione in tutta Italia.</p>
+      </div>
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+      <input type="text" placeholder="🔍 Cerca per nome o razza..." />
+      <select><option>Specie: tutte</option><option>Cane</option><option>Gatto</option><option>Altro</option></select>
+      <select><option>Taglia</option><option>Piccola</option><option>Media</option><option>Grande</option></select>
+      <select><option>Età</option><option>Cucciolo</option><option>Adulto</option><option>Anziano</option></select>
+      <select><option>Città</option><option>Milano</option><option>Roma</option><option>Torino</option></select>
+      <button class="btn btn-primary btn-sm">Applica</button>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid grid-4">
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600')"><span class="card-badge">Adozione</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Luna</h3>
+          <div class="card-meta"><span>🐕 Cane</span><span>📍 Milano</span><span>2 anni</span></div>
+          <div class="card-foot"><span class="tag">Vaccinata</span><a href="dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=600')"><span class="card-badge">Adozione</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Milo</h3>
+          <div class="card-meta"><span>🐈 Gatto</span><span>📍 Roma</span><span>8 mesi</span></div>
+          <div class="card-foot"><span class="tag blue">Sterilizzato</span><a href="dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600')"><span class="card-badge">Adozione</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Bea</h3>
+          <div class="card-meta"><span>🐕 Cane</span><span>📍 Torino</span><span>4 anni</span></div>
+          <div class="card-foot"><span class="tag">Buona con bimbi</span><a href="dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600')"><span class="card-badge">Adozione</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Otto</h3>
+          <div class="card-meta"><span>🐈 Gatto</span><span>📍 Bologna</span><span>3 anni</span></div>
+          <div class="card-foot"><span class="tag blue">Microchip</span><a href="dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=600')"><span class="card-badge">Adozione</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Rex</h3>
+          <div class="card-meta"><span>🐕 Cane</span><span>📍 Napoli</span><span>5 anni</span></div>
+          <div class="card-foot"><span class="tag">Educato</span><a href="dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600')"><span class="card-badge">Adozione</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Pepe</h3>
+          <div class="card-meta"><span>🐈 Gatto</span><span>📍 Firenze</span><span>1 anno</span></div>
+          <div class="card-foot"><span class="tag blue">Sterilizzato</span><a href="dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600')"><span class="card-badge">Adozione</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Zoe</h3>
+          <div class="card-meta"><span>🐕 Cane</span><span>📍 Bari</span><span>3 anni</span></div>
+          <div class="card-foot"><span class="tag">Vaccinata</span><a href="dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=600')"><span class="card-badge">Adozione</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Nina</h3>
+          <div class="card-meta"><span>🐈 Gatto</span><span>📍 Genova</span><span>6 mesi</span></div>
+          <div class="card-foot"><span class="tag blue">Microchip</span><a href="dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem">
+      <button class="btn btn-secondary">Carica altri</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

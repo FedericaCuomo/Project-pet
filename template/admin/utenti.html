@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Utenti — PetAdopt Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+<div class="app">
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn mobile-toggle" onclick="document.getElementById('sb').classList.toggle('open')">☰</button>
+      <h1>Utenti</h1>
+      <div class="search"><input type="text" placeholder="Cerca utente..." /></div>
+      <div class="topbar-actions"><button class="btn btn-primary btn-sm">+ Nuovo utente</button></div>
+    </header>
+    <main class="content">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>3.421 utenti registrati</h2>
+          <div style="display:flex;gap:.4rem">
+            <select style="padding:.45rem .7rem;border:1px solid var(--ink-300);border-radius:8px"><option>Tutti i ruoli</option><option>Admin</option><option>Utente</option></select>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="tbl">
+            <thead>
+              <tr><th>Utente</th><th>Email</th><th>Ruolo</th><th>Annunci</th><th>Stato</th><th>Iscritto il</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="cell-name"><div class="avatar">MR</div>Maria Rossi</td><td>maria.rossi@mail.it</td><td><span class="badge badge-gray">Utente</span></td><td>4</td><td><span class="badge badge-success">Attivo</span></td><td>10/01/2026</td><td><button class="btn btn-ghost btn-sm">⋯</button></td></tr>
+              <tr><td class="cell-name"><div class="avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">GS</div>Giulio Santi</td><td>g.santi@mail.it</td><td><span class="badge badge-gray">Utente</span></td><td>2</td><td><span class="badge badge-success">Attivo</span></td><td>05/02/2026</td><td><button class="btn btn-ghost btn-sm">⋯</button></td></tr>
+              <tr><td class="cell-name"><div class="avatar">AB</div>Anna Bianchi</td><td>anna.b@mail.it</td><td><span class="badge badge-blue">Moderatore</span></td><td>12</td><td><span class="badge badge-success">Attivo</span></td><td>18/02/2026</td><td><button class="btn btn-ghost btn-sm">⋯</button></td></tr>
+              <tr><td class="cell-name"><div class="avatar" style="background:linear-gradient(135deg,#3b82f6,#8b5cf6)">LP</div>Luca Pini</td><td>luca.pini@mail.it</td><td><span class="badge badge-gray">Utente</span></td><td>1</td><td><span class="badge badge-warn">Sospeso</span></td><td>22/03/2026</td><td><button class="btn btn-ghost btn-sm">⋯</button></td></tr>
+              <tr><td class="cell-name"><div class="avatar">AD</div>Admin</td><td>admin@petadopt.it</td><td><span class="badge badge-danger">Admin</span></td><td>0</td><td><span class="badge badge-success">Attivo</span></td><td>01/01/2026</td><td><button class="btn btn-ghost btn-sm">⋯</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <aside class="sidebar" id="sb">
+    <div class="sidebar-head"><a href="index.html" class="brand"><span class="brand-logo">🐾</span> PetAdopt</a></div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-label">Principale</div>
+        <a href="index.html" class="nav-item"><span class="ico">📊</span>Dashboard</a>
+        <a href="annunci.html" class="nav-item"><span class="ico">📋</span>Annunci</a>
+        <a href="annuncio-nuovo.html" class="nav-item"><span class="ico">➕</span>Nuovo annuncio</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Gestione</div>
+        <a href="adozioni-admin.html" class="nav-item"><span class="ico">🐾</span>Adozioni</a>
+        <a href="utenti.html" class="nav-item active"><span class="ico">👥</span>Utenti</a>
+        <a href="#" class="nav-item"><span class="ico">✉️</span>Messaggi</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Sistema</div>
+        <a href="impostazioni.html" class="nav-item"><span class="ico">⚙️</span>Impostazioni</a>
+      </div>
+    </nav>
+    <div class="sidebar-foot"><div class="avatar">AD</div><div class="user-info"><strong>Admin</strong><span>admin@petadopt.it</span></div></div>
+  </aside>
+</div>
+</body>
+</html>

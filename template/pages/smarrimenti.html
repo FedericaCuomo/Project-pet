@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Smarrimenti — PetAdopt</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="../index.html" class="brand"><span class="brand-logo">🐾</span> PetAdopt</a>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="adozioni.html">Adozioni</a>
+      <a href="smarrimenti.html" style="color:var(--green-700)">Smarrimenti</a>
+      <a href="ritrovamenti.html">Ritrovamenti</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="nav-cta"><a href="pubblica.html" class="btn btn-primary btn-sm">Segnala smarrimento</a></div>
+  </div>
+</header>
+
+<section class="section" style="padding-top:2.5rem">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" style="color:var(--danger)">Smarrimenti</span>
+        <h1 style="margin:0">Aiutaci a ritrovarli</h1>
+        <p>Annunci di animali smarriti — condividi per aumentare le possibilità di ritrovamento.</p>
+      </div>
+    </div>
+
+    <div class="filters">
+      <input type="text" placeholder="🔍 Nome, razza, zona..." />
+      <select><option>Specie</option><option>Cane</option><option>Gatto</option></select>
+      <select><option>Regione</option><option>Lombardia</option><option>Lazio</option></select>
+      <select><option>Quando</option><option>Ultime 24h</option><option>Ultima settimana</option></select>
+      <button class="btn btn-primary btn-sm">Cerca</button>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=600')"><span class="card-badge lost">Smarrito</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Rocky — Beagle</h3>
+          <div class="card-meta"><span>📍 Napoli, Vomero</span><span>📅 18/05</span></div>
+          <p style="margin-top:.5rem;font-size:.9rem">Collare rosso, molto socievole. Risponde al nome.</p>
+          <div class="card-foot"><span class="tag gray">Ricompensa</span><a href="dettaglio-smarrimento.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600')"><span class="card-badge lost">Smarrito</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Maya — Meticcio</h3>
+          <div class="card-meta"><span>📍 Palermo</span><span>📅 22/05</span></div>
+          <p style="margin-top:.5rem;font-size:.9rem">Pelo marrone, taglia media, ha paura dei rumori forti.</p>
+          <div class="card-foot"><span class="tag gray">Urgente</span><a href="dettaglio-smarrimento.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=600')"><span class="card-badge lost">Smarrito</span></div>
+        <div class="card-body">
+          <h3 class="card-title">Felix — Gatto nero</h3>
+          <div class="card-meta"><span>📍 Milano, Navigli</span><span>📅 20/05</span></div>
+          <p style="margin-top:.5rem;font-size:.9rem">Senza collare, occhi gialli, molto timido.</p>
+          <div class="card-foot"><span class="tag gray">Microchippato</span><a href="dettaglio-smarrimento.html" class="btn btn-ghost btn-sm">Dettagli →</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

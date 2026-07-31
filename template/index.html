@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PetAdopt — Adozioni e ritrovamenti</title>
+<meta name="description" content="Adotta un amico a quattro zampe o aiuta a ritrovare un animale smarrito." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-logo">🐾</span> PetAdopt
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pages/adozioni.html">Adozioni</a>
+      <a href="pages/smarrimenti.html">Smarrimenti</a>
+      <a href="pages/ritrovamenti.html">Ritrovamenti</a>
+      <a href="pages/chi-siamo.html">Chi siamo</a>
+      <a href="pages/contatti.html">Contatti</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="pages/pubblica.html" class="btn btn-secondary btn-sm">Pubblica annuncio</a>
+      <a href="admin/index.html" class="btn btn-primary btn-sm">Accedi</a>
+    </div>
+    <button class="hamburger" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Adozioni responsabili</span>
+      <h1>Dai una nuova casa a chi <span>aspetta solo te</span>.</h1>
+      <p class="hero-lead">Migliaia di cani e gatti cercano una famiglia. Sfoglia gli annunci di adozione, segnala uno smarrimento o aiuta a riunire un animale ai suoi proprietari.</p>
+      <div class="hero-actions">
+        <a href="pages/adozioni.html" class="btn btn-primary">🐶 Vedi adozioni</a>
+        <a href="pages/smarrimenti.html" class="btn btn-secondary">📢 Segnala smarrimento</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>1.245</strong><span>Animali adottati</span></div>
+        <div class="hero-stat"><strong>318</strong><span>Ritrovati</span></div>
+        <div class="hero-stat"><strong>92</strong><span>Associazioni partner</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ===== ADOZIONI ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">In evidenza</span>
+        <h2>Pronti per essere adottati</h2>
+        <p>Una selezione di amici a quattro zampe in cerca di casa.</p>
+      </div>
+      <a href="pages/adozioni.html" class="btn btn-secondary btn-sm">Vedi tutti →</a>
+    </div>
+
+    <div class="grid grid-4">
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600')">
+          <span class="card-badge">Adozione</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Luna</h3>
+          <div class="card-meta"><span>🐕 Cane</span><span>📍 Milano</span><span>2 anni</span></div>
+          <div class="card-foot">
+            <span class="tag">Vaccinata</span>
+            <a href="pages/dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=600')">
+          <span class="card-badge">Adozione</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Milo</h3>
+          <div class="card-meta"><span>🐈 Gatto</span><span>📍 Roma</span><span>8 mesi</span></div>
+          <div class="card-foot">
+            <span class="tag blue">Sterilizzato</span>
+            <a href="pages/dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600')">
+          <span class="card-badge">Adozione</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Bea</h3>
+          <div class="card-meta"><span>🐕 Cane</span><span>📍 Torino</span><span>4 anni</span></div>
+          <div class="card-foot">
+            <span class="tag">Buona con bimbi</span>
+            <a href="pages/dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600')">
+          <span class="card-badge">Adozione</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Otto</h3>
+          <div class="card-meta"><span>🐈 Gatto</span><span>📍 Bologna</span><span>3 anni</span></div>
+          <div class="card-foot">
+            <span class="tag blue">Microchip</span>
+            <a href="pages/dettaglio-adozione.html" class="btn btn-ghost btn-sm">Dettagli →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SMARRIMENTI / RITROVAMENTI ===== -->
+<section class="section" style="background:var(--ink-100)">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" style="color:var(--blue-700)">Aiutaci a riunirli</span>
+        <h2>Annunci recenti</h2>
+        <p>Smarrimenti e ritrovamenti segnalati dalla community.</p>
+      </div>
+      <div style="display:flex;gap:.5rem">
+        <a href="pages/smarrimenti.html" class="btn btn-secondary btn-sm">Smarriti</a>
+        <a href="pages/ritrovamenti.html" class="btn btn-secondary btn-sm">Ritrovati</a>
+      </div>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=600')">
+          <span class="card-badge lost">Smarrito</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Rocky — Beagle</h3>
+          <div class="card-meta"><span>📍 Napoli, Vomero</span><span>📅 18/05</span></div>
+          <p style="margin-top:.5rem;font-size:.9rem">Collare rosso, molto socievole. Risponde al nome.</p>
+          <div class="card-foot">
+            <span class="tag gray">Ricompensa</span>
+            <a href="pages/dettaglio-smarrimento.html" class="btn btn-ghost btn-sm">Dettagli →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600')">
+          <span class="card-badge found">Ritrovato</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Gatto tigrato</h3>
+          <div class="card-meta"><span>📍 Firenze, Centro</span><span>📅 21/05</span></div>
+          <p style="margin-top:.5rem;font-size:.9rem">Trovato in via dei Servi, sembra abituato alle persone.</p>
+          <div class="card-foot">
+            <span class="tag blue">In custodia</span>
+            <a href="pages/dettaglio-smarrimento.html" class="btn btn-ghost btn-sm">Dettagli →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600')">
+          <span class="card-badge lost">Smarrito</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Maya — Meticcio</h3>
+          <div class="card-meta"><span>📍 Palermo</span><span>📅 22/05</span></div>
+          <p style="margin-top:.5rem;font-size:.9rem">Pelo marrone, taglia media, ha paura dei rumori forti.</p>
+          <div class="card-foot">
+            <span class="tag gray">Urgente</span>
+            <a href="pages/dettaglio-smarrimento.html" class="btn btn-ghost btn-sm">Dettagli →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" style="justify-content:center;text-align:center;flex-direction:column">
+      <span class="eyebrow">Come funziona</span>
+      <h2>Semplice, gratuito, sicuro</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="feature">
+        <div class="feature-ico">🔎</div>
+        <h3>Cerca</h3>
+        <p>Filtra per specie, taglia, città. Trova rapidamente l'animale o l'annuncio che ti interessa.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-ico">📝</div>
+        <h3>Pubblica</h3>
+        <p>Crea un annuncio di adozione, smarrimento o ritrovamento in meno di un minuto.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-ico">💬</div>
+        <h3>Contatta</h3>
+        <p>Scrivi direttamente al responsabile dell'annuncio in modo sicuro e protetto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Hai un animale da dare in adozione?</h2>
+      <p>Pubblica gratuitamente il tuo annuncio e raggiungi migliaia di persone pronte ad accoglierlo.</p>
+      <a href="pages/pubblica.html" class="btn btn-primary">Pubblica annuncio</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:.6rem"><span class="brand-logo">🐾</span> PetAdopt</div>
+        <p style="color:#94a3b8">La piattaforma italiana per adozioni responsabili e ritrovamento di animali smarriti.</p>
+      </div>
+      <div>
+        <h4>Esplora</h4>
+        <ul>
+          <li><a href="pages/adozioni.html">Adozioni</a></li>
+          <li><a href="pages/smarrimenti.html">Smarrimenti</a></li>
+          <li><a href="pages/ritrovamenti.html">Ritrovamenti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informazioni</h4>
+        <ul>
+          <li><a href="pages/chi-siamo.html">Chi siamo</a></li>
+          <li><a href="pages/contatti.html">Contatti</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legale</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Termini</a></li>
+          <li><a href="#">Cookie</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PetAdopt. Tutti i diritti riservati.</span>
+      <span>Made with 🐾 in Italy</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

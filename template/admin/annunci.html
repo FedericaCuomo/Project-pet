@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Annunci — PetAdopt Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+<div class="app">
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn mobile-toggle" onclick="document.getElementById('sb').classList.toggle('open')">☰</button>
+      <h1>Gestione annunci</h1>
+      <div class="search"><input type="text" placeholder="Cerca..." /></div>
+      <div class="topbar-actions">
+        <a href="annuncio-nuovo.html" class="btn btn-primary btn-sm">+ Nuovo annuncio</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="panel">
+        <div class="panel-head">
+          <div style="display:flex;gap:.4rem">
+            <button class="btn btn-outline btn-sm">Tutti (294)</button>
+            <button class="btn btn-ghost btn-sm">Adozioni (248)</button>
+            <button class="btn btn-ghost btn-sm">Smarrimenti (34)</button>
+            <button class="btn btn-ghost btn-sm">Ritrovamenti (18)</button>
+          </div>
+          <div style="display:flex;gap:.5rem;align-items:center">
+            <select style="padding:.45rem .7rem;border:1px solid var(--ink-300);border-radius:8px"><option>Tutti gli stati</option><option>Attivi</option><option>In revisione</option><option>Chiusi</option></select>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th><input type="checkbox" /></th>
+                <th>Animale</th><th>Tipo</th><th>Pubblicato da</th><th>Città</th>
+                <th>Stato</th><th>Visualiz.</th><th>Data</th><th>Azioni</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="cell-name"><div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=200')"></div>Luna</td>
+                <td><span class="badge badge-success">Adozione</span></td>
+                <td>Maria R.</td>
+                <td>Milano</td>
+                <td><span class="badge badge-blue">Attivo</span></td>
+                <td>1.245</td>
+                <td>22/05/2026</td>
+                <td><button class="btn btn-ghost btn-sm">✏️</button> <button class="btn btn-ghost btn-sm">🗑️</button></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="cell-name"><div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=200')"></div>Rocky</td>
+                <td><span class="badge badge-danger">Smarrito</span></td>
+                <td>Giulio S.</td>
+                <td>Napoli</td>
+                <td><span class="badge badge-warn">In revisione</span></td>
+                <td>302</td>
+                <td>22/05/2026</td>
+                <td><button class="btn btn-ghost btn-sm">✏️</button> <button class="btn btn-ghost btn-sm">🗑️</button></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="cell-name"><div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=200')"></div>Milo</td>
+                <td><span class="badge badge-success">Adozione</span></td>
+                <td>Anna B.</td>
+                <td>Roma</td>
+                <td><span class="badge badge-blue">Attivo</span></td>
+                <td>892</td>
+                <td>21/05/2026</td>
+                <td><button class="btn btn-ghost btn-sm">✏️</button> <button class="btn btn-ghost btn-sm">🗑️</button></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="cell-name"><div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=200')"></div>Gatto tigrato</td>
+                <td><span class="badge badge-blue">Ritrovato</span></td>
+                <td>Luca P.</td>
+                <td>Firenze</td>
+                <td><span class="badge badge-gray">Chiuso</span></td>
+                <td>156</td>
+                <td>21/05/2026</td>
+                <td><button class="btn btn-ghost btn-sm">✏️</button> <button class="btn btn-ghost btn-sm">🗑️</button></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td class="cell-name"><div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=200')"></div>Bea</td>
+                <td><span class="badge badge-success">Adozione</span></td>
+                <td>Francesca T.</td>
+                <td>Torino</td>
+                <td><span class="badge badge-blue">Attivo</span></td>
+                <td>478</td>
+                <td>20/05/2026</td>
+                <td><button class="btn btn-ghost btn-sm">✏️</button> <button class="btn btn-ghost btn-sm">🗑️</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel-foot" style="display:flex;justify-content:space-between;align-items:center">
+          <span style="color:var(--ink-500);font-size:.85rem">Mostrati 1-5 di 294</span>
+          <div style="display:flex;gap:.3rem">
+            <button class="btn btn-outline btn-sm">‹</button>
+            <button class="btn btn-primary btn-sm">1</button>
+            <button class="btn btn-outline btn-sm">2</button>
+            <button class="btn btn-outline btn-sm">3</button>
+            <button class="btn btn-outline btn-sm">›</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <aside class="sidebar" id="sb">
+    <div class="sidebar-head"><a href="index.html" class="brand"><span class="brand-logo">🐾</span> PetAdopt</a></div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-label">Principale</div>
+        <a href="index.html" class="nav-item"><span class="ico">📊</span>Dashboard</a>
+        <a href="annunci.html" class="nav-item active"><span class="ico">📋</span>Annunci<span class="badge">12</span></a>
+        <a href="annuncio-nuovo.html" class="nav-item"><span class="ico">➕</span>Nuovo annuncio</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Gestione</div>
+        <a href="adozioni-admin.html" class="nav-item"><span class="ico">🐾</span>Adozioni</a>
+        <a href="#" class="nav-item"><span class="ico">📢</span>Smarrimenti</a>
+        <a href="#" class="nav-item"><span class="ico">✓</span>Ritrovamenti</a>
+        <a href="utenti.html" class="nav-item"><span class="ico">👥</span>Utenti</a>
+        <a href="#" class="nav-item"><span class="ico">✉️</span>Messaggi<span class="badge">3</span></a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Sistema</div>
+        <a href="#" class="nav-item"><span class="ico">📈</span>Statistiche</a>
+        <a href="impostazioni.html" class="nav-item"><span class="ico">⚙️</span>Impostazioni</a>
+      </div>
+    </nav>
+    <div class="sidebar-foot"><div class="avatar">AD</div><div class="user-info"><strong>Admin</strong><span>admin@petadopt.it</span></div></div>
+  </aside>
+</div>
+</body>
+</html>
