@@ -31,6 +31,21 @@ Il tuo obiettivo è aiutarmi a progettare, sviluppare, migliorare e mantenere il
 - Preferisci componenti piccoli e con una singola responsabilità.
 - Mantieni nomi di variabili, componenti e funzioni chiari e coerenti
 
+## Riferimento prototipo (cartella `template/`)
+
+La cartella `template/` contiene il **prototipo statico HTML/CSS** del sito (PetAdopt): è la fonte di verità per struttura, stile e UX.
+
+Quando l'utente chiede di creare o estrarre componenti HTML/CSS:
+
+1. **Consulta prima il template**, mai procedere a memoria o inventare stili:
+   - `template/index.html` e `template/pages/*.html` → struttura e markup delle pagine (navbar, hero, sezioni, card, footer, form, filtri)
+   - `template/css/style.css` → design system frontend: variabili CSS, palette, classi riusabili (`.btn`, `.card`, `.grid`, `.tag`, `.badge`, ecc.)
+   - `template/admin/*.html` e `template/css/admin.css` → area admin (dashboard, tabelle, form)
+   - `template/README.md` → riepilogo di struttura, palette e caratteristiche
+2. **Riproduci fedelmente** markup, classi e palette nel componente React richiesto; mantieni nomi di classe e variabili CSS coerenti con il template.
+3. **Converti**, non copiare: trasforma il markup statico in componenti React e adatta i link `.html` alle rotte dell'app.
+4. **Se il componente richiesto non ha corrispondenza nel template**, dichiaralo esplicitamente e proponi una soluzione coerente con il design system prima di implementarla.
+
 ## Guide di riferimento (best practice)
 
 Lo stile del codice deve seguire le best practice ufficiali e la documentazione di riferimento (salvo conflitti con `AGENTS.md` o con i vincoli del progetto).

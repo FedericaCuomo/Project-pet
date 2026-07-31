@@ -1,6 +1,6 @@
 # OpenCode - AGENTS.md
 
-Applicazione single-page con Vite + React 19 + TypeScript 6 (DevWars — confronto delle skill degli sviluppatori).
+Applicazione single-page con Vite + React 19 + TypeScript 6 (PetAdopt — adozioni e ritrovamenti di animali).
 
 ## Vincoli principali
 
@@ -10,6 +10,13 @@ Applicazione single-page con Vite + React 19 + TypeScript 6 (DevWars — confron
 - **React Compiler** abilitato via plugin Babel (`@rolldown/plugin-babel` + `babel-plugin-react-compiler`). Impatta le performance di dev/build.
 - **ESLint flat config** — usa `typescript-eslint`, `eslint-plugin-react-hooks` e `eslint-plugin-react-refresh`.
 - **Modulo singolo** — nessun confine da monorepo. Entry point: `src/main.tsx`.
+
+## Contesto del sito (cartella `template/`)
+
+- `template/` contiene il **prototipo statico HTML/CSS** del sito (PetAdopt): è la fonte di verità per struttura, palette, componenti e UX.
+- Prima di creare o modificare componenti HTML/CSS, **consulta sempre `template/`** (in particolare `index.html`, `pages/*.html`, `css/style.css`, `admin/*.html`, `css/admin.css` e `README.md`).
+- Il prototipo va **convertito in componenti React** (markup e classi fedeli al template), non copiato come HTML statico.
+- Se un componente richiesto non ha corrispondenza nel prototipo, dichiaralo e proponi una soluzione coerente col design system prima di implementarla.
 
 ## Linee guida di stile per le risposte (sempre, per tutti gli agenti)
 
